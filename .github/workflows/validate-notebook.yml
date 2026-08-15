@@ -1,0 +1,26 @@
+name: Validate Heart Disease Notebook
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  execute-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Execute notebook from a clean kernel
+        run: jupyter nbconvert --to notebook --execute heart_disease_analysis.ipynb --output /tmp/heart_disease_analysis_executed.ipynb --ExecutePreprocessor.timeout=600
