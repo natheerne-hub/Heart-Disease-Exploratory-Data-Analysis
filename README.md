@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/heart-disease-banner.svg" alt="Heart Disease Analytics — Dr. Natheer Soliman" width="100%"></p>
+
 # 🫀 Heart Disease — Exploratory Data Analysis & Risk Modeling
 
 ### CardioRisk-AI | Healthcare Data Analysis with Python
@@ -14,8 +16,20 @@ Move from structured clinical data to clear, reproducible healthcare insights by
 2. **Data preprocessing** — prepare clinical variables for analysis and modeling.
 3. **Exploratory data analysis** — investigate relationships between patient characteristics and heart disease.
 4. **Clinical interpretation** — translate statistical patterns into understandable healthcare insights.
-5. **Predictive modeling** — explore classification approaches for cardiovascular risk prediction.
-6. **Model evaluation** — assess classification performance with appropriate metrics when models are trained.
+5. **Predictive modeling** — compare baseline classification approaches for cardiovascular risk prediction.
+6. **Model evaluation** — assess classification performance with accuracy, precision, recall, F1, ROC-AUC, confusion matrices, and stratified cross-validation.
+
+## 📈 Visual Analysis
+
+The notebook generates portfolio-ready analytical visuals directly from the project data, including:
+
+- Heart-disease outcome distribution
+- Age, resting blood pressure, cholesterol, maximum heart rate, and Oldpeak distributions by outcome
+- Correlation matrix and target correlations
+- Confusion matrices for Logistic Regression and Random Forest
+- Hold-out ROC curves
+
+> The visual results are generated from the reproducible notebook rather than manually invented or copied figures. Selected exported charts will be added here as repository assets after notebook execution.
 
 ## 📊 Dataset Features
 
@@ -39,8 +53,9 @@ The processed dataset includes variables such as:
 
 ## 📁 Repository Contents
 
-- [`heart_disease_analysis.ipynb`](./heart_disease_analysis.ipynb) — analysis notebook
+- [`heart_disease_analysis.ipynb`](./heart_disease_analysis.ipynb) — reproducible EDA and baseline modeling notebook
 - [`heart_processed.csv`](./heart_processed.csv) — processed clinical dataset
+- [`assets/`](./assets) — visual assets for the project presentation
 
 ## 🩺 Clinical Perspective
 
