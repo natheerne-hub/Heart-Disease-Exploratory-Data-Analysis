@@ -21,15 +21,57 @@ Move from structured clinical data to clear, reproducible healthcare insights by
 
 ## 📈 Visual Analysis
 
-The notebook generates portfolio-ready analytical visuals directly from the project data, including:
+The notebook has been executed and saved with its outputs. Visitors can inspect every result directly on GitHub without running any code.
+
+### Heart-disease outcome distribution
+
+![Heart-disease outcome distribution](assets/plots/01-heart-disease-outcome-distribution.png)
+
+### Clinical-variable distributions by outcome
+
+| Age | Maximum heart rate |
+|---|---|
+| ![Age distribution](assets/plots/02-age-distribution-by-heart-disease-outcome.png) | ![Maximum heart-rate distribution](assets/plots/05-maxhr-distribution-by-heart-disease-outcome.png) |
+
+### Correlation matrix
+
+![Correlation matrix](assets/plots/07-correlation-matrix.png)
+
+### Model discrimination
+
+![ROC curves](assets/plots/10-roc-curves-hold-out-test-set.png)
+
+### Random Forest feature importance
+
+![Random Forest feature importance](assets/plots/11-random-forest-top-feature-importances.png)
+
+Feature importance describes how much the fitted model used each variable; it does **not** establish causation or clinical importance by itself.
+
+## 📊 Model Results
+
+The models were assessed on a stratified 20% hold-out test set (184 records).
+
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.891 | 0.894 | 0.912 | 0.903 | 0.933 |
+| Random Forest | 0.853 | 0.879 | 0.853 | 0.866 | 0.928 |
+
+Logistic Regression achieved the strongest hold-out performance in this run. Random Forest remained useful as a nonlinear comparison and for model-specific feature-importance exploration.
+
+### Confusion matrices
+
+| Logistic Regression | Random Forest |
+|---|---|
+| ![Logistic Regression confusion matrix](assets/plots/08-logistic-regression-confusion-matrix.png) | ![Random Forest confusion matrix](assets/plots/09-random-forest-confusion-matrix.png) |
+
+The complete notebook also includes:
 
 - Heart-disease outcome distribution
 - Age, resting blood pressure, cholesterol, maximum heart rate, and Oldpeak distributions by outcome
 - Correlation matrix and target correlations
 - Confusion matrices for Logistic Regression and Random Forest
 - Hold-out ROC curves
-
-> The visual results are generated from the reproducible notebook rather than manually invented or copied figures. Selected exported charts will be added here as repository assets after notebook execution.
+- Stratified cross-validation results
 
 ## 📊 Dataset Features
 
@@ -55,7 +97,7 @@ The processed dataset includes variables such as:
 
 - [`heart_disease_analysis.ipynb`](./heart_disease_analysis.ipynb) — reproducible EDA and baseline modeling notebook
 - [`heart_processed.csv`](./heart_processed.csv) — processed clinical dataset
-- [`assets/`](./assets) — visual assets for the project presentation
+- [`assets/plots/`](./assets/plots) — exported analytical figures visible without executing the notebook
 
 ## 🩺 Clinical Perspective
 
