@@ -43,7 +43,7 @@ The notebook has been executed and saved with its outputs. Visitors can inspect 
 
 ### Random Forest feature importance
 
-![Random Forest feature importance](assets/plots/11-random-forest-top-feature-importances.png)
+![Random Forest feature importance](assets/plots/feature-importance-linkedin-v2.png)
 
 Feature importance describes how much the fitted model used each variable; it does **not** establish causation or clinical importance by itself.
 
