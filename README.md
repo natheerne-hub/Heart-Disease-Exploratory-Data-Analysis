@@ -6,6 +6,8 @@
 
 A healthcare data science project exploring clinical characteristics associated with heart disease and preparing patient data for predictive modeling.
 
+[**View the executed notebook on Kaggle**](https://www.kaggle.com/code/nateer/heart-disease-exploratory-data-analysis)
+
 ## 🎯 Project Objective
 
 Move from structured clinical data to clear, reproducible healthcare insights by combining exploratory analysis, preprocessing, visualization, clinical interpretation, and predictive-modeling concepts.
