@@ -89,11 +89,11 @@ The processed dataset includes variables such as:
 - ST slope
 - Heart disease outcome
 
-### Data provenance status
+### Data provenance and license
 
-The repository currently contains an already processed, one-hot-encoded dataset. Its exact transformation lineage and redistribution license are not documented in the repository.
+The 918-row processed file matches the structure and record order of the [Heart Failure Prediction Dataset by fedesoriano](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) after categorical one-hot encoding. The upstream dataset combines five established heart-disease datasets and is listed on Kaggle under **Database: Open Database; Contents: © Original Authors**.
 
-**Portfolio decision:** the executed analysis is retained on GitHub, but the processed CSV will not be uploaded as a new Kaggle dataset until its source and permitted reuse are verified. A Kaggle notebook should attach the authorized upstream dataset and reproduce preprocessing transparently.
+This repository does not claim ownership of the clinical source data. The analysis and code are portfolio work; source-data attribution and upstream database/content rights remain in force. A Kaggle notebook should attach the upstream dataset directly and reproduce the preprocessing rather than publish the processed file as a new CC0 dataset.
 
 ## 🧰 Tech Stack
 
