@@ -89,6 +89,12 @@ The processed dataset includes variables such as:
 - ST slope
 - Heart disease outcome
 
+### Data provenance status
+
+The repository currently contains an already processed, one-hot-encoded dataset. Its exact transformation lineage and redistribution license are not documented in the repository.
+
+**Portfolio decision:** the executed analysis is retained on GitHub, but the processed CSV will not be uploaded as a new Kaggle dataset until its source and permitted reuse are verified. A Kaggle notebook should attach the authorized upstream dataset and reproduce preprocessing transparently.
+
 ## 🧰 Tech Stack
 
 `Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `Scikit-learn` · `Jupyter / Google Colab`
