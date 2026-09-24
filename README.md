@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/heart-disease-banner.svg" alt="Heart Disease Analytics — Dr. Natheer Soliman" width="100%"></p>
+<p align="center"><img src="assets/heart-disease-banner.svg" alt="Heart Disease Analytics — Dr. Nather Yunis Suliaman" width="100%"></p>
 
 # 🫀 Heart Disease — Exploratory Data Analysis & Risk Modeling
 
@@ -117,5 +117,5 @@ This project is for **educational and portfolio purposes**. Results should not b
 
 ## 👨‍⚕️ Author
 
-**Dr. Natheer Soliman, MD**  
+**Dr. Nather Yunis Suliaman, MD**  
 Healthcare Data Analyst | Clinical Data & AI
